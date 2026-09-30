@@ -1,0 +1,24 @@
+{
+  "name": "design-world-kit",
+  "version": "0.1.0",
+  "description": "Templates and a validator for PRODUCT.md, DESIGN.md and VOICE.md, with a session-start hook so a design agent loads the project's world first.",
+  "type": "module",
+  "bin": {
+    "design-world-kit": "bin/design-world-kit.mjs"
+  },
+  "files": ["bin", "src", "templates", "hooks", "examples", "docs"],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["design.md", "product.md", "voice.md", "agent", "context", "claude-code", "design-system", "hook"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reidifydesign/design-world-kit.git"
+  },
+  "homepage": "https://reidify.design/open-source",
+  "license": "MIT",
+  "author": "Rish Sadh (https://github.com/rishsadh)"
+}
