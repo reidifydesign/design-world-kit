@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact|fork",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npx --yes github:reidifydesign/design-world-kit load --format claude --if-missing notice"
+          }
+        ]
+      }
+    ]
+  }
+}
