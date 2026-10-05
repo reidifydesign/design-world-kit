@@ -61,7 +61,7 @@ The full section lists and every check are in [docs/formats.md](docs/formats.md)
 - The figure check is a heuristic for percentages, money, multipliers, `N+` counts and counts of years, clients and similar. It will miss figures written as words ("three hundred") and may flag harmless ones.
 - It does not check colour contrast or other accessibility rules. Run Google's linter for the DESIGN.md spec's own rules.
 - The front matter parser is a small YAML subset (maps, lists, quoted strings). A feature outside that, such as a multi-line string, is reported as an error.
-- The hook loads the files. It cannot make an agent obey them, and it only runs where the harness runs hooks. Only the Claude Code hook format has been checked, against its documentation on 2026-09-30, and it has not been run inside a live session.
+- The hook loads the files. It cannot make an agent obey them, and it only runs where the harness runs hooks. Only the Claude Code hook format has been checked, against its documentation on 2026-09-30. On 2026-10-05 it ran in a live Claude Code session (`claude -p`, local install): the session received the project's status and files before the first prompt. The `npx github:` form downloads the package, and that path has not been timed.
 - It has been tested against the files in this repo, not yet against a real Impeccable-generated PRODUCT.md.
 - It does not write your content. The templates are empty on purpose.
 
